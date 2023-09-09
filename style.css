@@ -14,7 +14,7 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: url('/ocean.jpg');
+    background: url('./ocean.jpg');
     min-height: 100%;
     display: flex;
     flex-direction: column;
