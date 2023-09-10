@@ -14,7 +14,7 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: url('./ocean.jpg');
+    background: url('./images/ocean.jpg');
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -98,7 +98,7 @@ h1:hover{
 img{
     width:100%;
     height:100%;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 footer{
@@ -112,7 +112,7 @@ footer p{
 }
 
 
-[data-testid="currentUTCTime"] span ,[data-testid="currentDayOfTheWeek"] span {
+[data-testid="currentUTCTime"]  ,[data-testid="currentDayOfTheWeek"]  {
     color: rgb(134, 52, 33)
 }
 

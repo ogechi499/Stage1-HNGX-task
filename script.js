@@ -15,7 +15,7 @@ function getDateTime() {
   ];
 
   const displayDayEl = document.querySelector(
-    '[data-testid="currentDayOfTheWeek"] span'
+    '[data-testid="currentDayOfTheWeek"]'
   );
 
   displayDayEl.innerHTML = dayList[day];
@@ -54,10 +54,10 @@ function getDateTime() {
   }
 
   const displayTimeEl = document.querySelector(
-    '[data-testid="currentUTCTime"] span'
+    '[data-testid="currentUTCTime"]'
   );
 
-  displayTimeEl.innerHTML = `${hour}:${minute}:${second}:${milliseconds}${prepend}`;
+  displayTimeEl.innerHTML = `${today.getTime()}:${minute}:${second}:${milliseconds}${prepend}`;
 
   function checkTime(i) {
     if (i < 10) {
