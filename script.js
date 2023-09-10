@@ -31,7 +31,7 @@ function getDateTime() {
   hour = hour >= 12 ? hour - 12 : hour;
   minute = checkTime(minute);
   second = checkTime(second);
-  milliseconds = checkTime(milliseconds);
+  // milliseconds = checkTime(milliseconds);
 
   if (hour === 0 && prepend === PM) {
     if (minute === 0 && second === 0) {
@@ -57,7 +57,8 @@ function getDateTime() {
     '[data-testid="currentUTCTime"]'
   );
 
-  displayTimeEl.innerHTML = `${today.getTime()}:${minute}:${second}:${milliseconds}${prepend}`;
+  displayTimeEl.innerHTML = today.getTime();
+  // `${today.getTime()}:${minute}:${second}:${milliseconds}${prepend}`;
 
   function checkTime(i) {
     if (i < 10) {
